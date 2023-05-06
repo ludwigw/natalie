@@ -28,11 +28,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+timezone: Pacific/Auckland
 
 # Build settings
-theme: minima
+markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+#Pagination
+paginate: 7
+paginate_path: "/:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
